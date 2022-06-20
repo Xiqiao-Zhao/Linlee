@@ -5,7 +5,7 @@ import numpy as np
 import win32api
 import win32con
 # 图片路径
-file_path = './test/片1 左正10V_000007.jpg'
+file_path = './test/片1 左正10V_000007.jpg'  #修改为本次实验的中的任意一张图像路径，从而获得这次实验的pixelDistance
 img=cv2.imdecode(np.fromfile(file_path,dtype=np.uint8),-1)
 a = []
 b = []
