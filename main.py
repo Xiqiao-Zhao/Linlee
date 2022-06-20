@@ -33,7 +33,7 @@ def on_EVENT_LBUTTONDOWN(event, x, y, flags, param):
 def key(path2img):
     imgLists = os.listdir(path2img)
     for imgList in imgLists:
-        file_path = './test/'+imgList+''
+        file_path = path2img+'/'+imgList+''
         img = cv2.imdecode(np.fromfile(file_path, dtype=np.uint8), -1)
         cv2.namedWindow("image")
         cv2.setMouseCallback("image", on_EVENT_LBUTTONDOWN)
